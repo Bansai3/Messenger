@@ -1,0 +1,6 @@
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/clientQtTests.dir
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/test.dir
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/clientQtTests_autogen_timestamp_deps.dir
+/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-qtClientTests-Qt_6_6_1_for_macOS-Debug/CMakeFiles/clientQtTests_autogen.dir
