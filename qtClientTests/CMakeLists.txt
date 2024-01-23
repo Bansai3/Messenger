@@ -23,10 +23,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(clientQtTests tst_clientqttests.cpp
-    ../client/authentication.cpp ../client/authentication.h ../client/authentication.ui ../client/chat.cpp ../client/chat.h ../client/chat.ui
+    ../client/chat.cpp ../client/chat.h ../client/chat.ui
     ../client/DeviceController.cpp ../client/DeviceController.h ../client/mainwindow.cpp ../client/mainwindow.h ../client/mainwindow.ui ../client/sign_in.cpp ../client/sign_in.h ../client/sign_in.ui ../client/sign_up.cpp ../client/sign_up.h ../client/sign_up.ui
     ../server/FailHandler.cpp ../server/FailHandler.h ../server/Listener.cpp ../server/Listener.h ../server/Session.cpp ../server/Session.h ../server/SessionsHandler.h ../server/User.cpp ../server/User.h ../server/UserConstants.h ../server/UsersStorage.cpp ../server/UsersStorage.h
-
+    ../server/FailHandler.cpp ../server/FailHandler.h ../server/Listener.cpp ../server/Listener.h ../server/main.cpp ../server/Message.cpp ../server/Message.h ../server/Namespaces.h ../server/PersonalCorrespondence.cpp ../server/PersonalCorrespondence.h ../server/PortConnectionState.h
+    ../server/Session.cpp ../server/Session.h ../server/User.cpp ../server/User.h ../server/UserConstants.h ../server/UsersGroup.cpp ../server/UsersGroup.h ../server/UsersStorage.cpp ../server/UsersStorage.h
 )
 add_test(NAME clientQtTests COMMAND clientQtTests)
 

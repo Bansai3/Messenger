@@ -16,14 +16,8 @@
 #include "FailHandler.h"
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
-
-namespace beast = boost::beast;
-namespace http = beast::http;
-namespace websocket = beast::websocket;
-namespace net = boost::asio;
-using tcp = boost::asio::ip::tcp;
-
-typedef websocket::stream<beast::tcp_stream> ws;
+#include "Namespaces.h"
+#include "User.h"
 
 class Listener;
 
@@ -55,6 +49,11 @@ public:
     void writefromListener(beast::flat_buffer& message);
 
     void on_writefromListener(beast::error_code ec, std::size_t bytes_transferred);
+
+    void ping(boost::beast::flat_buffer& fb);
+
+    void handlePing(beast::error_code ec, std::size_t bytes_transferred);
+
 private:
 
     void handleRequest();
@@ -63,12 +62,34 @@ private:
 
     void handleSignUpRequest(boost::property_tree::ptree& tree);
 
-    void handleSendMessageRequest(boost::property_tree::ptree& tree);
+    void handleSendGroupMessageRequest(boost::property_tree::ptree& tree);
+
+    void handleSendPCMessageRequest(boost::property_tree::ptree& tree);
 
     void sendResponse(boost::property_tree::ptree& jsonResponse);
 
     bool checkJsonFormat(std::string reauestJson);
 
     void handleInvalidRequest();
+
+    void handleCreateGroupRequest(boost::property_tree::ptree& tree);
+
+    void handleCreatePersonalCorrespondenceRequest(boost::property_tree::ptree& tree);
+
+    void handleOpenGroupChatRequest(boost::property_tree::ptree& tree);
+
+    void handleOpenPrivateChatRequest(boost::property_tree::ptree& tree);
+
+    void handleLeaveGroupRequest(boost::property_tree::ptree& tree);
+
+    void handleEndPrivateChatRequest(boost::property_tree::ptree& tree);
+
+    void handleJoinGroupRequest(boost::property_tree::ptree& tree);
+
+    void handleDeleteMessageFromGroupRequest(boost::property_tree::ptree& tree);
+
+    void handleDeleteMessageFromPCRequest(boost::property_tree::ptree &tree);
+
+    void handleGetAllChats(boost::property_tree::ptree &tree);
 };
 #endif

@@ -108,8 +108,7 @@
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/build-server-Qt_6_6_1_for_macOS-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/build-ServerTest-Qt_6_6_1_for_macOS-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -166,7 +165,7 @@
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-server-Qt_6_6_1_for_macOS-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-ServerTest-Qt_6_6_1_for_macOS-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -221,7 +220,7 @@
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-server-Qt_6_6_1_for_macOS-RelWithDebInfo</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-ServerTest-Qt_6_6_1_for_macOS-RelWithDebInfo</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -277,7 +276,7 @@
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-server-Qt_6_6_1_for_macOS-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-ServerTest-Qt_6_6_1_for_macOS-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -332,7 +331,7 @@
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-server-Qt_6_6_1_for_macOS-MinSizeRel</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-ServerTest-Qt_6_6_1_for_macOS-MinSizeRel</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -395,13 +394,13 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">server</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.server</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">server</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ServerTest</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.ServerTest</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">ServerTest</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-server-Qt_6_6_1_for_macOS-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/build-ServerTest-Qt_6_6_1_for_macOS-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

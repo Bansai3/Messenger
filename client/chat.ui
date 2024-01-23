@@ -6,184 +6,443 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>589</width>
-    <height>388</height>
+    <width>567</width>
+    <height>389</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Client</string>
+   <string>Dialog</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">#lnIPAddress[state = &quot;0&quot;]{
-
-        background-color: rgb(234, 0, 0);
-}
-
-#lnIPAddress[state = &quot;1&quot;]{
-
-        background-color: rgb(67, 135, 100);
-}
-</string>
-  </property>
-  <property name="modal">
-   <bool>true</bool>
-  </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QLabel" name="background_image">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>529</width>
-     <height>290</height>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>391</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QGroupBox" name="groupBox">
-        <property name="title">
-         <string>Connection information</string>
-        </property>
-        <layout class="QFormLayout" name="formLayout">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>IP Address:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="lnIPAddress">
-           <property name="inputMask">
-            <string>000.000.000.000;_</string>
-           </property>
-           <property name="text">
-            <string>127.0.0.1</string>
-           </property>
-           <property name="clearButtonEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="state" stdset="0">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Port:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QSpinBox" name="spnPort">
-           <property name="minimum">
-            <number>0</number>
-           </property>
-           <property name="maximum">
-            <number>65535</number>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QPushButton" name="btnConnect">
-           <property name="text">
-            <string>Connect</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <widget class="QGroupBox" name="grpSendData">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="title">
-         <string>Send Data</string>
-        </property>
-        <layout class="QFormLayout" name="formLayout_2">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>Message:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="lnMessage">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="clearButtonEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="state" stdset="0">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QPushButton" name="btnSend">
-           <property name="text">
-            <string>Send</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QListWidget" name="lstConsole"/>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnClear">
-        <property name="text">
-         <string>Clear</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/back_ground_3.jpeg</pixmap>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="startChatButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Start Chat</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createGroupButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Create Group</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="groupNameLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Group Name...</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="chats">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="text">
+    <string>Chats</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connectButton">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>340</y>
+     <width>251</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Panel</enum>
+   </property>
+   <property name="text">
+    <string>Message</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>251</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="messageLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+background-color: white; </string>
+    </property>
+    <property name="text">
+     <string>Message...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendMessageButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+background-color: rgb(141, 255, 132); </string>
+    </property>
+    <property name="text">
+     <string>Send</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteMessageButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+background-color: rgb(255, 134, 134);
+color: black;
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="messagesListWidget">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>251</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chatTitle">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+font-weight: bold;
+color: darkblue;
+border-color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="text">
+    <string>None</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="chatsListWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(243, 247, 247);
+border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+color: black;
+background-color: rgb(243, 247, 247);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="joinGroupButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Join</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openButton">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>10</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteChatButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leaveGroupButton">
+    <property name="geometry">
+     <rect>
+      <x>193</x>
+      <y>10</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 4px;
+background-color: white;</string>
+    </property>
+    <property name="text">
+     <string>Leave</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>btnClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lstConsole</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>401</x>
-     <y>396</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>413</x>
-     <y>326</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

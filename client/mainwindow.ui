@@ -14,20 +14,46 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="background_image">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>481</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/back_ground_3.jpeg</pixmap>
+    </property>
+   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>70</y>
-      <width>281</width>
-      <height>221</height>
+      <x>60</x>
+      <y>40</y>
+      <width>331</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Times New Roman</family>
       <pointsize>18</pointsize>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: white;</string>
     </property>
     <property name="title">
      <string>New Client?</string>
@@ -35,22 +61,56 @@
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Sign in</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>Sign up</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>74</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+     </property>
+     <property name="text">
+      <string>Sign in</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>156</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+     </property>
+     <property name="text">
+      <string>Sign up</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

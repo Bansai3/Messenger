@@ -5,8 +5,7 @@
 #include <boost/beast/core.hpp>
 #include <boost/beast/websocket.hpp>
 #include <boost/asio/strand.hpp>
-
-namespace beast = boost::beast;
+#include "Namespaces.h"
 
 class FailHandler {
 public:

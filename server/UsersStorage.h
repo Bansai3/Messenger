@@ -16,10 +16,14 @@ public:
 
     boost::property_tree::ptree getUser(std::string login, std::string password);
 
+    User* getUser(std::string& login);
+
+    std::vector<std::string> getUsers();
+
 private:
     std::map<std::string, User> users_;
 
-    bool checkUserParameters(User& user);
+    bool checkUserParameters(User* user);
 
     bool checkLogin(std::string login);
 

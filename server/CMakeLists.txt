@@ -28,12 +28,25 @@ add_executable(server
   FailHandler.cpp
   Listener.h
   Listener.cpp
-  SessionsHandler.h
+
   UsersStorage.h
   User.h
   User.cpp
   UsersStorage.cpp
   UserConstants.h
+
+  Namespaces.h
+
+  PortConnectionState.h
+
+  UsersGroup.h
+  UsersGroup.cpp
+  Message.h
+  Message.cpp
+  PersonalCorrespondence.h
+  PersonalCorrespondence.cpp
+
+
 )
 target_link_libraries(server Qt${QT_VERSION_MAJOR}::Core)
 

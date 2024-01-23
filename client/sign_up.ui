@@ -13,11 +13,27 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QLabel" name="background_image">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/back_ground_3.jpeg</pixmap>
+   </property>
+  </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>10</y>
+     <x>40</x>
+     <y>20</y>
      <width>331</width>
      <height>261</height>
     </rect>
@@ -26,7 +42,12 @@
     <font>
      <family>Times New Roman</family>
      <pointsize>18</pointsize>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+color: darkblue;</string>
    </property>
    <property name="title">
     <string>Sign up</string>
@@ -37,7 +58,7 @@
    <widget class="QPushButton" name="signUp">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>200</x>
       <y>200</y>
       <width>100</width>
       <height>31</height>
@@ -47,119 +68,21 @@
      <font>
       <family>Times New Roman</family>
       <pointsize>16</pointsize>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
     </property>
     <property name="text">
      <string>sign up</string>
     </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>40</y>
-      <width>271</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="name">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Name</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="nameText">
-         <property name="text">
-          <string>Vladislav</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="surname">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Surname</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="surnameText">
-         <property name="text">
-          <string>Pushkin</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QLabel" name="login">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Login</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="loginText">
-         <property name="text">
-          <string>123hellothere</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLabel" name="password">
-         <property name="font">
-          <font>
-           <family>Times New Roman</family>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="passwordText">
-         <property name="text">
-          <string>2228redblue</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
    </widget>
    <widget class="QPushButton" name="back">
     <property name="geometry">
@@ -170,9 +93,173 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 1px;
+border-style: solid;
+border-color: darkblue;
+border-radius: 2px;
+font-weight: bold;
+color: darkblue;
+background-color: rgb(243, 247, 247);</string>
+    </property>
     <property name="text">
      <string>back</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>43</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="name">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>16</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight: bold;
+color: darkblue;</string>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nameText">
+       <property name="text">
+        <string>Vladislav</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>79</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="surname">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>16</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight: bold;
+color: darkblue;</string>
+       </property>
+       <property name="text">
+        <string>Surname:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="surnameText">
+       <property name="text">
+        <string>Pushkin</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>115</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="login">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>16</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight: bold;
+color: darkblue;</string>
+       </property>
+       <property name="text">
+        <string>Login:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="loginText">
+       <property name="text">
+        <string>123hellothere</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>151</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="password">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>16</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-weight: bold;
+color: darkblue;</string>
+       </property>
+       <property name="text">
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="passwordText">
+       <property name="text">
+        <string>2228redblue</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

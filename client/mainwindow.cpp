@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget* parent)
 
 {
     ui->setupUi(this);
+    QPixmap image("/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/images/back_ground_3.jpeg");
+    ui->background_image->setPixmap(image.scaled(500, 1000, Qt::KeepAspectRatio));
 }
 
 MainWindow::~MainWindow()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 11.0.3, 2023-12-26T21:01:36. -->
+<!-- Written by QtCreator 11.0.3, 2024-01-23T08:35:03. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -108,7 +108,7 @@
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}
 %{CMAKE_OSX_ARCHITECTURES:DefaultFlag}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-client-Qt_6_6_0_for_macOS-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/build-client-Qt_6_6_0_for_macOS-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -400,7 +400,7 @@
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_2/build-client-Qt_6_6_0_for_macOS-Debug/client.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project_copy/build-client-Qt_6_6_0_for_macOS-Debug/client.app/Contents/MacOS</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

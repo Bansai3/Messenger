@@ -2,13 +2,12 @@
 
 int main(int argc, char* argv[])
 {
-    auto const address = "127.0.0.1";
-    auto const port = 8001;
-    auto const threads = 1;
+    const auto port = 8001;
+    const auto threads = 1;
 
-    auto ep = tcp::endpoint(tcp::v4(), 8001);
-
+    auto ep = tcp::endpoint(tcp::v4(), port);
     net::io_context ioc{threads};
+
     std::make_shared<Listener>(ioc, ep)->run();
 
     std::vector<std::thread> v;

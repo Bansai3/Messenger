@@ -9,8 +9,9 @@ User::User(
     name_(name),
     surname_(surname),
     login_(login),
-    password_(password){}
-
+    password_(password),
+    signedIn(false)
+    {}
 
 std::string& User::getName()
 {
@@ -28,3 +29,15 @@ std::string& User::getPassword()
 {
     return password_;
 }
+
+bool User::isSignedIn()
+{
+    return signedIn;
+}
+
+void User::changeSignInState(bool newState)
+{
+    signedIn = newState;
+}
+
+

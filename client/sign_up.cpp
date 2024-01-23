@@ -7,6 +7,8 @@ sign_up::sign_up(QWidget *parent) :
     ui(new Ui::sign_up)
 {
     ui->setupUi(this);
+    QPixmap image("/Users/Vadim/Desktop/ITMO/5_сем/Продвинутый_c++/course_project/images/back_ground_3.jpeg");
+    ui->background_image->setPixmap(image.scaled(500, 1000, Qt::KeepAspectRatio));
     setDeviceContoller();
     connectDevice();
 }
@@ -34,16 +36,29 @@ void sign_up::handleResponse(QJsonObject& response)
     auto responseType = response["operation type"];
     auto responseStatus = response["status"];
 
+//    if (responseType.toString() == "ping")
+//    {
+//        QJsonObject json;
 
-    if(responseStatus == "OK")
-    {
-        close();
-        mw->show();
-    } else
-    {
-        auto message = response["message"].toString();
-        (new QErrorMessage(this))->showMessage(message);
-    }
+//        json["operation type"] = "ping response";
+
+//        QJsonDocument jsonDoc(json);
+//        QString message = jsonDoc.toJson();
+
+//        _controller.send(message);
+//        return;
+//    } else
+//    {
+        if(responseStatus == "OK")
+        {
+            close();
+            mw->show();
+        } else
+        {
+            auto message = response["message"].toString();
+            (new QErrorMessage(this))->showMessage(message);
+        }
+//    }
 }
 
 void sign_up::connectDevice()
@@ -99,7 +114,7 @@ void sign_up::setDeviceContoller()
 //    connect(&_controller, &DeviceController::connected, this, &sign_up::sendMessage);
     connect(&_controller, &DeviceController::dataReady, this, &sign_up::device_dataReady);
     connect(&_controller, &DeviceController::disconnected, this, &sign_up::device_disconnected);
-    connect(&_controller, &DeviceController::stateChanged, this, &sign_up::device_stateChanged);
+//    connect(&_controller, &DeviceController::stateChanged, this, &sign_up::device_stateChanged);
     connect(&_controller, &DeviceController::errorOccurred, this, &sign_up::device_errorOccurred);
 }
 
@@ -108,12 +123,12 @@ void sign_up::device_disconnected()
     QMessageBox::information(this, "Connection error", "Disconnected from server");
 }
 
-void sign_up::device_stateChanged(QAbstractSocket::SocketState state)
-{
-    QMetaEnum metaEnum = QMetaEnum::fromType<QAbstractSocket::SocketState >();
-    QString message = QString::fromStdString("Device state changed - " + std::string(metaEnum.valueToKey(state)));
-    QMessageBox::information(this, "State changed", message);
-}
+//void sign_up::device_stateChanged(QAbstractSocket::SocketState state)
+//{
+//    QMetaEnum metaEnum = QMetaEnum::fromType<QAbstractSocket::SocketState >();
+//    QString message = QString::fromStdString("Device state changed - " + std::string(metaEnum.valueToKey(state)));
+//    QMessageBox::information(this, "State changed", message);
+//}
 
 void sign_up::device_errorOccurred(QAbstractSocket::SocketError error)
 {

@@ -6,14 +6,14 @@ boost::property_tree::ptree UsersStorage::addUser(User user)
 
     response.put("operation type", "sign up response");
 
-    if (!checkUserParameters(user))
+    if (!checkUserParameters(&user))
     {
         response.put("status", "ERROR");
         response.put("message", "Invalid user data format");
         return response;
     }
 
-    auto& login = user.getLogin();
+    std::string login = user.getLogin();
 
     bool loginExists = users_.count(login) != 0;
 
@@ -24,10 +24,11 @@ boost::property_tree::ptree UsersStorage::addUser(User user)
         response.put("message", "User with such login already exists");
     } else
     {
-        users_.insert(std::pair<std::string, User>(login, user));
+        users_.insert({login, user});
         response.put("status", "OK");
         response.put("message", "New user created");
     }
+
     return response;
 }
 
@@ -58,12 +59,33 @@ boost::property_tree::ptree UsersStorage::getUser(std::string login, std::string
     return response;
 }
 
-bool UsersStorage::checkUserParameters(User &user)
+User* UsersStorage::getUser(std::string &login)
 {
-    std::string login = user.getLogin();
-    std::string password = user.getPassword();
-    std::string name = user.getName();
-    std::string surname = user.getSurname();
+    if (users_.count(login) == 0)
+    {
+        return nullptr;
+    } else
+    {
+        return &users_.at(login);
+    }
+}
+
+std::vector<std::string> UsersStorage::getUsers()
+{
+    std::vector<std::string> users;
+    for (auto& u : users_)
+    {
+        users.push_back(u.first);
+    }
+    return users;
+}
+
+bool UsersStorage::checkUserParameters(User* user)
+{
+    std::string login = user->getLogin();
+    std::string password = user->getPassword();
+    std::string name = user->getName();
+    std::string surname = user->getSurname();
 
     return checkLogin(login) &&
            checkPassword(password) &&

@@ -25,9 +25,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         sign_in.h sign_in.cpp sign_in.ui
         sign_up.h sign_up.cpp sign_up.ui
-        chat.h chat.cpp chat.ui
         DeviceController.h
         DeviceController.cpp
+        chat.h chat.cpp chat.ui
 
 
     )
